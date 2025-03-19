@@ -145,7 +145,7 @@
   </script>
   
   <style scoped>
-  /* Используйте те же стили, что и в вашем основном компоненте */
+
   .home-page {
     background-color: #000;
     min-height: 100vh;
