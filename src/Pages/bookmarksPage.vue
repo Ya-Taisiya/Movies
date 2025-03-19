@@ -105,21 +105,27 @@
   
       // Удаление фильма из закладок через API
       const removeFromBookmarks = async (movie) => {
-        try {
-          const response = await fetch(`http://localhost:3000/bookmarks/${movie.id}`, {
-            method: 'DELETE',
-          });
-  
-          if (response.ok) {
-            console.log('Фильм удален из закладок');
-            fetchBookmarks(); // Обновляем список закладок после удаления
-          } else {
-            console.error('Ошибка при удалении фильма из закладок');
-          }
-        } catch (error) {
-          console.error('Ошибка при запросе к серверу:', error);
-        }
-      };
+  try {
+    const response = await fetch(`http://localhost:3000/bookmarks/${movie.id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        user_id: currentUser.value.id, // Передаем user_id
+      }),
+    });
+
+    if (response.ok) {
+      console.log('Фильм удален из закладок');
+      fetchBookmarks(); // Обновляем список закладок после удаления
+    } else {
+      console.error('Ошибка при удалении фильма из закладок');
+    }
+  } catch (error) {
+    console.error('Ошибка при запросе к серверу:', error);
+  }
+};
   
       // Открытие деталей фильма
       const openMovieDetails = (movie) => {
