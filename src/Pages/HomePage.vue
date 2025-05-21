@@ -498,9 +498,9 @@
   
   .search-card {
     background-color: #333;
-    border-radius: 15px;
-    padding: 10px;
-    margin-top: 20px;
+    border-radius:5px;
+    padding: 5px;
+    margin-top: 5px;
   }
   
   .movies-grid {
