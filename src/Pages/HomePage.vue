@@ -245,182 +245,164 @@ export default {
         title: "Один дома",
         poster: "https://st.kp.yandex.net/images/film_big/8124.jpg",
         year: 1990,
-        rating: 8.1,
         duration: 103,
-        description: "Комедия о мальчике, оставшемся дома один на Рождество.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        description: "Американское семейство отправляется из Чикаго в Европу, но в спешке сборов бестолковые родители забывают дома одного из своих детей. Юное создание, однако, не теряется и демонстрирует чудеса изобретательности. И когда в дом залезают грабители, им приходится не раз пожалеть о встрече с милым крошкой.",
+        trailer: "https://rutube.ru/play/embed/b82cd9a27b3c4bb5fa2fce80403530b8"
+    },
+    {
         id: 2,
         title: "1+1",
         poster: "https://st.kp.yandex.net/images/film_big/535341.jpg",
-        year: 2014,
-        rating: 8.6,
-        duration: 169,
-        description: "Фантастический эпос о путешествии через червоточину.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 2011,
+        duration: 112,
+        description: "Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы — молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.",
+        trailer: "https://rutube.ru/play/embed/699385a53a6e786fd2bdfe307bb15740/"
+    },
+    {
         id: 3,
-        title: "Джентльмены",
-        poster: "https://st.kp.yandex.net/images/film_big/1143242.jpg",
-        year: 2010,
-        rating: 8.7,
-        duration: 148,
-        description: "Фильм о проникновении в сны.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        title: "Джентльмены предпочитают блондинок",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ad264447-ab0e-41a6-9e78-f43a2a30c587/1920x",
+        year: 1953,
+        duration: 91,
+        description: "Две очаровательные певицы из маленького городка, Лорелей Ли и Дороти Шоу, отправляются в Париж на гастроли. Лорелей обручена с богатым наследником, но её привлекают и другие мужчины, что приводит к забавным и неожиданным ситуациям. Мюзикл с участием Мэрилин Монро, ставший классикой Голливуда.",
+        trailer: "https://rutube.ru/play/embed/736f931acdfd833203a7324b0a9ab135/"
+    },
+    {
         id: 4,
         title: "Волк с Уолл-Стрит",
         poster: "https://st.kp.yandex.net/images/film_big/462682.jpg",
-        year: 2019,
-        rating: 8.4,
-        duration: 122,
-        description: "История становления Джокера.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 2013,
+        duration: 180,
+        description: "История взлета и падения брокера Джордана Белфорта, который сколотил состояние на мошеннических схемах и погрузился в мир наркотиков, разврата и безудержного богатства. Фильм Мартина Скорсезе с Леонардо ДиКаприо в главной роли.",
+        trailer: "https://rutube.ru/play/embed/98de9f7df63abdb1f88eb1692f8eaec3/"
+    },
+    {
         id: 5,
-        title: "Пираты Карибского моря",
+        title: "Пираты Карибского моря: Проклятие Черной жемчужины",
         poster: "https://st.kp.yandex.net/images/film_big/4374.jpg",
         year: 2003,
-        rating: 8.3,
         duration: 143,
-        description: "Приключения капитана Джека Воробья.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        description: "Капитан Джек Воробей объединяется с кузнецом Уиллом Тернером, чтобы спасти похищенную дочь губернатора от проклятых пиратов, превратившихся в живых мертвецов под предводительством капитана Барбоссы.",
+        trailer: "https://rutube.ru/play/embed/da1fd7d821dd1f962e261e5dc528f538/"
+    },
+    {
         id: 6,
         title: "Брат 2",
         poster: "https://st.kp.yandex.net/images/film_big/41520.jpg",
         year: 2000,
-        rating: 8.6,
-        duration: 155,
-        description: "Эпическая история о римском генерале.",
-        trailer: "https://ok.ru/video/721308026115",
-      },
-      {
+        duration: 127,
+        description: "Данила Багров отправляется в Америку, чтобы помочь брату своего погибшего друга. В чужой стране он сталкивается с местной мафией и продолжает отстаивать свою правду с помощью силы и смекалки.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-69606939&id=456239166&hd=2&autoplay=1"
+    },
+    {
         id: 7,
-        title: "Достать Ножи",
+        title: "Достать ножи",
         poster: "https://st.kp.yandex.net/images/film_big/1188529.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 2019,
+        duration: 130,
+        description: "Детектив Бенуа Блан расследует загадочное убийство известного писателя Харлана Тромби, произошедшее после семейного праздника. Каждый из эксцентричных родственников оказывается под подозрением.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-217672812&id=456239405&hd=2&autoplay=1"
+    },
+    {
         id: 8,
         title: "Гарри Поттер и философский камень",
         poster: "https://st.kp.yandex.net/images/film_big/689.jpg",
         year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        duration: 152,
+        description: "Первая часть истории о юном волшебнике Гарри Поттере, который узнает о своем магическом наследии и поступает в школу чародейства и волшебства Хогвартс.",
+        trailer: "https://rutube.ru/play/embed/cb7b3c0aad5c8a1e5cf5d22f59cc65b3/"
+    },
+    {
         id: 9,
         title: "Интерстеллар",
         poster: "https://st.kp.yandex.net/images/film_big/258687.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 2014,
+        duration: 169,
+        description: "Группа исследователей отправляется через червоточину в космосе в поисках нового дома для человечества, столкнувшегося с глобальным продовольственным кризисом.",
+        trailer: "https://rutube.ru/play/embed/17465fc541700b94ebd5648423675100/"
+    },
+    {
         id: 10,
-        title: "Игра престолов",
-        poster: "https://st.kp.yandex.net/images/film_big/464963.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        title: "В бой идут одни старики",
+        poster: "https://images.justwatch.com/poster/176649118/s718/v-boi-idut-odni-stariki.jpg",
+        year: 1973,
+        duration: 92,
+        description: "Военная драма о советских летчиках-истребителях во время Великой Отечественной войны, сочетающая героизм, фронтовое братство и лирические нотки.",
+        trailer: "https://rutube.ru/play/embed/a6771ca1e47b690d2c434553ebfdcb93/"
+    },
+    {
         id: 11,
         title: "Зеленая миля",
         poster: "https://st.kp.yandex.net/images/film_big/435.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 1999,
+        duration: 189,
+        description: "Надзиратель тюремного блока смертников Пол Эджкомб вспоминает необычного заключенного — гиганта Джона Коффи, обладающего сверхъестественными способностями.",
+        trailer: "https://rutube.ru/play/embed/b5c4021d29fac53e548c6d0d92fb55d2/"
+    },
+    {
         id: 12,
-        title: "Иван Васильвеич меняет профессию",
+        title: "Иван Васильевич меняет профессию",
         poster: "https://st.kp.yandex.net/images/film_big/42664.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 1973,
+        duration: 88,
+        description: "Из-за неисправности машины времени управдом Бунша и вор Милославский попадают в эпоху Ивана Грозного, а сам царь оказывается в советской Москве.",
+        trailer: "https://rutube.ru/play/embed/de108b940b59e5e9d361077328ca9201/"
+    },
+    {
         id: 13,
         title: "Зверополис",
         poster: "https://st.kp.yandex.net/images/film_big/775276.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 2016,
+        duration: 108,
+        description: "Оптимистичная зайчиха Джуди Хоппс становится первым кроликом в полиции Зверополиса и вместе с хитрым лисом Ником Уайлдом раскрывает заговор.",
+        trailer: "https://rutube.ru/play/embed/c732611737284a615ef6f26573c105f3/"
+    },
+    {
         id: 14,
-        title: "Побег из шоушенка",
+        title: "Побег из Шоушенка",
         poster: "https://st.kp.yandex.net/images/film_big/326.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 1994,
+        duration: 142,
+        description: "Несправедливо осужденный банкир Энди Дюфрейн годами планирует побег из тюрьмы, сохраняя надежду и достоинство в нечеловеческих условиях.",
+        trailer: "https://rutube.ru/play/embed/cae96c24f81419ccd444ed151a169985/"
+    },
+    {
         id: 15,
         title: "Начало",
         poster: "https://st.kp.yandex.net/images/film_big/447301.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 2010,
+        duration: 148,
+        description: "Группа специалистов по внедрению в сны пытается совершить невозможное - внедрить идею в подсознание человека через его сновидения.",
+        trailer: "https://rutube.ru/play/embed/27c335dcbef386ff6adfd3fb392465c0/"
+    },
+    {
         id: 16,
         title: "Аватар",
         poster: "https://st.kp.yandex.net/images/film_big/251733.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 2009,
+        duration: 162,
+        description: "Бывший морпех Джейк Салли, приняв облик инопланетного аватара, оказывается перед выбором между выполнением задания и защитой мира Пандоры.",
+        trailer: "https://rutube.ru/play/embed/2b28ced9e49b7204c7cfb5a8eda790a9/"
+    },
+    {
         id: 17,
         title: "Брат",
         poster: "https://st.kp.yandex.net/images/film_big/41519.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      },
-      {
+        year: 1997,
+        duration: 96,
+        description: "Демобилизованный Данила Багров приезжает в Петербург и неожиданно для себя становится защитником слабых в криминальном мире 1990-х.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-69606939&id=456239162&hd=2&autoplay=1"
+    },
+    {
         id: 18,
         title: "Гнев человеческий",
         poster: "https://st.kp.yandex.net/images/film_big/1318972.jpg",
-        year: 2001,
-        rating: 8.7,
-        duration: 178,
-        description: "Первая часть трилогии о Средиземье.",
-        trailer: "https://rutube.ru/play/embed/d933451fcf84bf57c8b85d7d92ff591c/",
-      }
-    ];
+        year: 2021,
+        duration: 118,
+        description: "Таинственный охранник инкассаторской машины оказывается человеком с темным прошлым, мстящим за убийство своего сына.",
+        trailer: "https://rutube.ru/play/embed/8831f2fe4007c5d2eed13ec625ef3655/"
+    }
+];
 
     const filteredMovies = computed(() => {
       let filtered = movies;
