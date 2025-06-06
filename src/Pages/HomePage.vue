@@ -275,170 +275,10 @@ export default {
     const selectedYear = ref(null);
     const selectedGenre = ref(null);
 
-    // Массив фильмов с обложками
+// Массив русских фильмов с обложками
     const movies = [
       {
         id: 1,
-        title: "Один дома",
-        poster: "https://st.kp.yandex.net/images/film_big/8124.jpg",
-        year: 1990,
-        duration: 103,
-        genres: ["Комедия", "Семейный"],
-        description: "Американское семейство отправляется из Чикаго в Европу, но в спешке сборов бестолковые родители забывают дома одного из своих детей. Юное создание, однако, не теряется и демонстрирует чудеса изобретательности. И когда в дом залезают грабители, им приходится не раз пожалеть о встрече с милым крошкой.",
-        trailer: "https://rutube.ru/play/embed/b82cd9a27b3c4bb5fa2fce80403530b8"
-      },
-      {
-        id: 2,
-        title: "1+1",
-        poster: "https://st.kp.yandex.net/images/film_big/535341.jpg",
-        year: 2011,
-        duration: 112,
-        genres: ["Драма", "Комедия"],
-        description: "Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы — молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.",
-        trailer: "https://rutube.ru/play/embed/699385a53a6e786fd2bdfe307bb15740/"
-      },
-      {
-        id: 3,
-        title: "Джентльмены предпочитают блондинок",
-        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ad264447-ab0e-41a6-9e78-f43a2a30c587/1920x",
-        year: 1953,
-        duration: 91,
-        genres: ["Мюзикл", "Комедия", "Мелодрама"],
-        description: "Две очаровательные певицы из маленького городка, Лорелей Ли и Дороти Шоу, отправляются в Париж на гастроли. Лорелей обручена с богатым наследником, но её привлекают и другие мужчины, что приводит к забавным и неожиданным ситуациям. Мюзикл с участием Мэрилин Монро, ставший классикой Голливуда.",
-        trailer: "https://rutube.ru/play/embed/736f931acdfd833203a7324b0a9ab135/"
-      },
-      {
-        id: 4,
-        title: "Волк с Уолл-Стрит",
-        poster: "https://st.kp.yandex.net/images/film_big/462682.jpg",
-        year: 2013,
-        duration: 180,
-        genres: ["Драма", "Криминал", "Биография"],
-        description: "История взлета и падения брокера Джордана Белфорта, который сколотил состояние на мошеннических схемах и погрузился в мир наркотиков, разврата и безудержного богатства. Фильм Мартина Скорсезе с Леонардо ДиКаприо в главной роли.",
-        trailer: "https://rutube.ru/play/embed/98de9f7df63abdb1f88eb1692f8eaec3/"
-      },
-      {
-        id: 5,
-        title: "Пираты Карибского моря: Проклятие Черной жемчужины",
-        poster: "https://st.kp.yandex.net/images/film_big/4374.jpg",
-        year: 2003,
-        duration: 143,
-        genres: ["Фэнтези", "Боевик", "Приключения"],
-        description: "Капитан Джек Воробей объединяется с кузнецом Уиллом Тернером, чтобы спасти похищенную дочь губернатора от проклятых пиратов, превратившихся в живых мертвецов под предводительством капитана Барбоссы.",
-        trailer: "https://rutube.ru/play/embed/da1fd7d821dd1f962e261e5dc528f538/"
-      },
-      {
-        id: 6,
-        title: "Брат 2",
-        poster: "https://st.kp.yandex.net/images/film_big/41520.jpg",
-        year: 2000,
-        duration: 127,
-        genres: ["Криминал", "Драма", "Боевик"],
-        description: "Данила Багров отправляется в Америку, чтобы помочь брату своего погибшего друга. В чужой стране он сталкивается с местной мафией и продолжает отстаивать свою правду с помощью силы и смекалки.",
-        trailer: "https://vkvideo.ru/video_ext.php?oid=-69606939&id=456239166&hd=2&autoplay=1"
-      },
-      {
-        id: 7,
-        title: "Достать ножи",
-        poster: "https://st.kp.yandex.net/images/film_big/1188529.jpg",
-        year: 2019,
-        duration: 130,
-        genres: ["Детектив", "Комедия", "Криминал"],
-        description: "Детектив Бенуа Блан расследует загадочное убийство известного писателя Харлана Тромби, произошедшее после семейного праздника. Каждый из эксцентричных родственников оказывается под подозрением.",
-        trailer: "https://vkvideo.ru/video_ext.php?oid=-217672812&id=456239405&hd=2&autoplay=1"
-      },
-      {
-        id: 8,
-        title: "Гарри Поттер и философский камень",
-        poster: "https://st.kp.yandex.net/images/film_big/689.jpg",
-        year: 2001,
-        duration: 152,
-        genres: ["Фэнтези", "Приключения", "Семейный"],
-        description: "Первая часть истории о юном волшебнике Гарри Поттере, который узнает о своем магическом наследии и поступает в школу чародейства и волшебства Хогвартс.",
-        trailer: "https://rutube.ru/play/embed/cb7b3c0aad5c8a1e5cf5d22f59cc65b3/"
-      },
-      {
-        id: 9,
-        title: "Интерстеллар",
-        poster: "https://st.kp.yandex.net/images/film_big/258687.jpg",
-        year: 2014,
-        duration: 169,
-        genres: ["Фантастика", "Драма", "Приключения"],
-        description: "Группа исследователей отправляется через червоточину в космосе в поисках нового дома для человечества, столкнувшегося с глобальным продовольственным кризисом.",
-        trailer: "https://rutube.ru/play/embed/17465fc541700b94ebd5648423675100/"
-      },
-      {
-        id: 10,
-        title: "В бой идут одни старики",
-        poster: "https://st.kp.yandex.net/images/film_big/464963.jpg",
-        year: 1973,
-        duration: 92,
-        genres: ["Драма", "Военный", "История"],
-        description: "Военная драма о советских летчиках-истребителях во время Великой Отечественной войны, сочетающая героизм, фронтовое братство и лирические нотки.",
-        trailer: "https://rutube.ru/play/embed/a6771ca1e47b690d2c434553ebfdcb93/"
-      },
-      {
-        id: 11,
-        title: "Зеленая миля",
-        poster: "https://st.kp.yandex.net/images/film_big/435.jpg",
-        year: 1999,
-        duration: 189,
-        genres: ["Драма", "Фэнтези", "Криминал"],
-        description: "Надзиратель тюремного блока смертников Пол Эджкомб вспоминает необычного заключенного — гиганта Джона Коффи, обладающего сверхъестественными способностями.",
-        trailer: "https://rutube.ru/play/embed/b5c4021d29fac53e548c6d0d92fb55d2/"
-      },
-      {
-        id: 12,
-        title: "Иван Васильевич меняет профессию",
-        poster: "https://st.kp.yandex.net/images/film_big/42664.jpg",
-        year: 1973,
-        duration: 88,
-        genres: ["Комедия", "Фантастика"],
-        description: "Из-за неисправности машины времени управдом Бунша и вор Милославский попадают в эпоху Ивана Грозного, а сам царь оказывается в советской Москве.",
-        trailer: "https://rutube.ru/play/embed/de108b940b59e5e9d361077328ca9201/"
-      },
-      {
-        id: 13,
-        title: "Зверополис",
-        poster: "https://st.kp.yandex.net/images/film_big/775276.jpg",
-        year: 2016,
-        duration: 108,
-        genres: ["Мультфильм", "Комедия", "Приключения"],
-        description: "Оптимистичная зайчиха Джуди Хоппс становится первым кроликом в полиции Зверополиса и вместе с хитрым лисом Ником Уайлдом раскрывает заговор.",
-        trailer: "https://rutube.ru/play/embed/c732611737284a615ef6f26573c105f3/"
-      },
-      {
-        id: 14,
-        title: "Побег из Шоушенка",
-        poster: "https://st.kp.yandex.net/images/film_big/326.jpg",
-        year: 1994,
-        duration: 142,
-        genres: ["Драма", "Криминал"],
-        description: "Несправедливо осужденный банкир Энди Дюфрейн годами планирует побег из тюрьмы, сохраняя надежду и достоинство в нечеловеческих условиях.",
-        trailer: "https://rutube.ru/play/embed/cae96c24f81419ccd444ed151a169985/"
-      },
-      {
-        id: 15,
-        title: "Начало",
-        poster: "https://st.kp.yandex.net/images/film_big/447301.jpg",
-        year: 2010,
-        duration: 148,
-        genres: ["Фантастика", "Боевик", "Триллер"],
-        description: "Группа специалистов по внедрению в сны пытается совершить невозможное - внедрить идею в подсознание человека через его сновидения.",
-        trailer: "https://rutube.ru/play/embed/27c335dcbef386ff6adfd3fb392465c0/"
-      },
-      {
-        id: 16,
-        title: "Аватар",
-        poster: "https://st.kp.yandex.net/images/film_big/251733.jpg",
-        year: 2009,
-        duration: 162,
-        genres: ["Фантастика", "Боевик", "Приключения"],
-        description: "Бывший морпех Джейк Салли, приняв облик инопланетного аватара, оказывается перед выбором между выполнением задания и защитой мира Пандоры.",
-        trailer: "https://rutube.ru/play/embed/2b28ced9e49b7204c7cfb5a8eda790a9/"
-      },
-      {
-        id: 17,
         title: "Брат",
         poster: "https://st.kp.yandex.net/images/film_big/41519.jpg",
         year: 1997,
@@ -448,14 +288,174 @@ export default {
         trailer: "https://vkvideo.ru/video_ext.php?oid=-69606939&id=456239162&hd=2&autoplay=1"
       },
       {
+        id: 2,
+        title: "Брат 2",
+        poster: "https://st.kp.yandex.net/images/film_big/41520.jpg",
+        year: 2000,
+        duration: 127,
+        genres: ["Криминал", "Драма", "Боевик"],
+        description: "Данила Багров отправляется в Америку, чтобы помочь брату своего погибшего друга. В чужой стране он сталкивается с местной мафией и продолжает отстаивать свою правду с помощью силы и смекалки.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-69606939&id=456239166&hd=2&autoplay=1"
+      },
+      {
+        id: 3,
+        title: "В бой идут одни старики",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/5078f4a6-486a-47bf-be2e-1d88d5a568ca/1920x",
+        year: 1973,
+        duration: 92,
+        genres: ["Драма", "Военный", "История"],
+        description: "Военная драма о советских летчиках-истребителях во время Великой Отечественной войны, сочетающая героизм, фронтовое братство и лирические нотки.",
+        trailer: "https://rutube.ru/play/embed/a6771ca1e47b690d2c434553ebfdcb93/"
+      },
+      {
+        id: 4,
+        title: "Иван Васильевич меняет профессию",
+        poster: "https://st.kp.yandex.net/images/film_big/42664.jpg",
+        year: 1973,
+        duration: 88,
+        genres: ["Комедия", "Фантастика"],
+        description: "Из-за неисправности машины времени управдом Бунша и вор Милославский попадают в эпоху Ивана Грозного, а сам царь оказывается в советской Москве.",
+        trailer: "https://rutube.ru/play/embed/de108b940b59e5e9d361077328ca9201/"
+      },
+      {
+        id: 5,
+        title: "Москва слезам не верит",
+        poster: "https://kassa.rambler.ru/s/StaticContent/P/Aimg/2206/07/220607191039028.jpg",
+        year: 1979,
+        duration: 150,
+        genres: ["Драма", "Мелодрама"],
+        description: "История трех подруг, приехавших в Москву в 1950-х годах, их любви, разочарований и надежд, которая завершается в конце 1970-х.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456240834&hd=2&autoplay=1"
+      },
+      {
+        id: 6,
+        title: "Движение вверх",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/71627cd3-3df0-4ab4-b474-1e0835422202/1920x",
+        year: 2017,
+        duration: 133,
+        genres: ["Спорт", "Драма", "История"],
+        description: "Фильм о легендарном матче сборной СССР по баскетболу с непобедимой командой США на Олимпиаде-1972 в Мюнхене.",
+        trailer: "https://rutube.ru/play/embed/e7f589cfc7ea9f0e2efcebbb0e1fba67/"
+      },
+      {
+        id: 7,
+        title: "Легенда №17",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/5dfdc382-1efc-4230-b4b5-9a713b9d889d/1920x",
+        year: 2012,
+        duration: 134,
+        genres: ["Спорт", "Драма", "Биография"],
+        description: "История восхождения к славе великого советского хоккеиста Валерия Харламова и триумфа советской сборной в Суперсерии-1972 против канадских профессионалов.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-217672812&id=456239416&hd=2&autoplay=1"
+      },
+      {
+        id: 8,
+        title: "Джентльмены удачи",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/e526f18b-eb9e-486b-be13-f44964a226d4/1920x",
+        year: 1971,
+        duration: 84,
+        genres: ["Комедия", "Криминал"],
+        description: "Чтобы найти украденный шлем Александра Македонского, сотруднику детского сада приходится выдать себя за главаря банды 'Доцент' и отправиться в тюрьму.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456239960&hd=2&autoplay=1"
+      },
+      {
+        id: 9,
+        title: "Операция «Ы» и другие приключения Шурика",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/8ac5e4a2-2717-416d-8ec1-c860813a70c1/1920x",
+        year: 1965,
+        duration: 90,
+        genres: ["Комедия"],
+        description: "Три истории о приключениях студента Шурика, включая знаменитую 'Операцию «Ы»', где он противостоит троице хулиганов.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456240819&hd=2&autoplay=1"
+      },
+      {
+        id: 10,
+        title: "Служебный роман",
+        poster: "https://avatars.mds.yandex.net/get-mpic/11532558/2a00000193d4530e714070cc00f7b8815aee/orig",
+        year: 1977,
+        duration: 159,
+        genres: ["Комедия", "Мелодрама"],
+        description: "Начальница статистического учреждения Людмила Прокофьевна Калугина и ее подчиненный Анатолий Ефремович Новосельцев оказываются вовлечены в неожиданный роман.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456240078&hd=2&autoplay=1"
+      },
+      {
+        id: 11,
+        title: "Ирония судьбы, или С легким паром!",
+        poster: "https://avatars.mds.yandex.net/i?id=85018b87656b4cc4dc87f374dab6d1d1_l-5192585-images-thumbs&n=13",
+        year: 1975,
+        duration: 184,
+        genres: ["Комедия", "Мелодрама"],
+        description: "Из-за ошибки друзей москвич Женя Лукашин оказывается в Ленинграде в квартире, идентичной его собственной, где знакомится с Надей Шевелевой.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-188257508&id=456239043&hd=2&autoplay=1"
+      },
+      {
+        id: 12,
+        title: "Кин-дза-дза!",
+        poster: "https://avatars.mds.yandex.net/i?id=7bea42a0a53fc516abc720d0de261ae4_l-4577579-images-thumbs&n=13",
+        year: 1986,
+        duration: 135,
+        genres: ["Фантастика", "Комедия", "Антиутопия"],
+        description: "Двое землян случайно попадают на пустынную планету Плюк, где сталкиваются с абсурдными законами местного общества.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456240165&hd=2&autoplay=1"
+      },
+      {
+        id: 13,
+        title: "Гараж",
+        poster: "https://www.kino-teatr.ru/movie/poster/1329/62299.jpg",
+        year: 1979,
+        duration: 96,
+        genres: ["Комедия", "Сатира"],
+        description: "Члены кооператива собираются на собрание, чтобы решить, кого исключить из списка на получение гаражей, что выливается в острое социальное противостояние.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-101492699&id=171493489&hd=2&autoplay=1"
+      },
+      {
+        id: 14,
+        title: "Афоня",
+        poster: "http://images-s.kinorium.com/movie/cover/67392/w1500_51596157.jpg",
+        year: 1975,
+        duration: 92,
+        genres: ["Комедия", "Драма"],
+        description: "История сантехника Афанасия Борщова, прожигателя жизни, который неожиданно влюбляется и начинает задумываться о смысле своего существования.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456239932&hd=2&autoplay=1"
+      },
+      {
+        id: 15,
+        title: "Любовь и голуби",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/645c6f6f-f9ae-46d9-b3f2-4d041938b5f3/1920x",
+        year: 1984,
+        duration: 107,
+        genres: ["Комедия", "Мелодрама"],
+        description: "Простой деревенский мужик Василий Кузякин, увлеченный разведением голубей, оказывается перед сложным выбором между семьей и страстью к другой женщине.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456240820&hd=2&autoplay=1"
+      },
+      {
+        id: 16,
+        title: "Особенности национальной охоты",
+        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/5d5fe2dc-665e-427a-9457-41c90833d39a/1920x",
+        year: 1995,
+        duration: 95,
+        genres: ["Комедия"],
+        description: "Группа друзей отправляется на охоту в карельские леса, где их ждут многочисленные приключения, водка и философские размышления о русской душе.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-69606939&id=456239151&hd=2&autoplay=1"
+      },
+      {
+        id: 17,
+        title: "Бриллиантовая рука",
+        poster: "https://cdn.ananasposter.ru/image/cache/catalog/poster/film/99/1566-1000x830.jpg",
+        year: 1968,
+        duration: 94,
+        genres: ["Комедия", "Криминал"],
+        description: "Советский гражданин Семен Горбунков по ошибке становится курьером контрабандистов, доставляющих драгоценности в гипсе на руке.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456239942&hd=2&autoplay=1"
+      },
+      {
         id: 18,
-        title: "Гнев человеческий",
-        poster: "https://st.kp.yandex.net/images/film_big/1318972.jpg",
-        year: 2021,
-        duration: 118,
-        genres: ["Боевик", "Триллер", "Криминал"],
-        description: "Таинственный охранник инкассаторской машины оказывается человеком с темным прошлым, мстящим за убийство своего сына.",
-        trailer: "https://rutube.ru/play/embed/8831f2fe4007c5d2eed13ec625ef3655/"
+        title: "Кавказская пленница",
+        poster: "https://static.kinoafisha.info/k/movie_posters/1920x1080/upload/movie_posters/2/8/3/5435382/c0ef9fe6554bb77a0b90b735ab4ab83f.jpg",
+        year: 1966,
+        duration: 82,
+        genres: ["Комедия"],
+        description: "Студент Шурик отправляется на Кавказ собирать фольклор, где становится невольным участником похищения девушки Нины местным начальником.",
+        trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456240039&hd=2&autoplay=1"
       }
     ];
 
