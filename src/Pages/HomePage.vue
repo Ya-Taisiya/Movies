@@ -275,7 +275,7 @@ export default {
     const selectedYear = ref(null);
     const selectedGenre = ref(null);
 
-// Массив русских фильмов с обложками
+   // Массив русских фильмов с обложками
     const movies = [
       {
         id: 1,
@@ -458,7 +458,6 @@ export default {
         trailer: "https://vkvideo.ru/video_ext.php?oid=-20286388&id=456240039&hd=2&autoplay=1"
       }
     ];
-
     // Опции для фильтров
     const yearOptions = computed(() => {
       const years = [...new Set(movies.map(movie => movie.year))];
@@ -762,8 +761,9 @@ export default {
       handleRatingChange,
       formatDate
     };
-  },
-};
+  }
+}
+
 </script>
 
 <style scoped>
